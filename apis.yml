@@ -1,17 +1,15 @@
 aid: microsoft-azure-arc
-url: 
-  https://raw.githubusercontent.com/api-evangelist/microsoft-azure-arc/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-arc/refs/heads/main/apis.yml
 apis:
   - aid: microsoft-azure-arc:rest-api
     name: Azure Arc REST API
     tags:
-      - Hybrid Cloud
-      - Multi-Cloud
       - Arc
+      - Hybrid Cloud
       - Kubernetes
+      - Multi-Cloud
       - Server Management
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://management.azure.com/
     humanURL: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
     properties:

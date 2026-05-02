@@ -1,5 +1,17 @@
 aid: microsoft-azure-arc
+name: Azure Arc
+description: >-
+  Operation groups for the Hybrid Compute REST API.
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-arc/refs/heads/main/apis.yml
+created: '2026-03-13'
+modified: '2026-04-28'
+tags:
+  - Arc
+  - Hybrid Cloud
+  - Kubernetes
+  - Multi-Cloud
+  - Server Management
 apis:
   - aid: microsoft-azure-arc:rest-api
     name: Azure Arc REST API
@@ -31,9 +43,6 @@ common:
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Support
     url: https://support.microsoft.com/
-modified: '2026-03-16'
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
-description: >-
-  Operation groups for the Hybrid Compute REST API.

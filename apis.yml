@@ -15,25 +15,22 @@ apis:
   - aid: microsoft-azure-arc:rest-api
     name: Azure Arc REST API
     tags:
-    - Arc
-    - Hybrid Cloud
-    - Kubernetes
-    - Multi-Cloud
-    - Server Management
+      - Arc
+      - Hybrid Cloud
+      - Kubernetes
+      - Multi-Cloud
+      - Server Management
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://management.azure.com/
     humanURL: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
     properties:
-    - url: openapi/microsoft-azure-arc-openapi.yml
-      type: OpenAPI
-    - url: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
-      type: Documentation
-    - type: NaftikoCapability
-      url: capabilities/microsoft-azure-arc-machines.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-azure-arc-operations.yaml
-    description: Azure Arc REST API enables management of servers, Kubernetes clusters, and data services running outside Azure.
-      It supports onboarding hybrid resources, applying Azure policies, enabling monitoring, and extending Azure management
+      - url: openapi/microsoft-azure-arc-openapi.yml
+        type: OpenAPI
+      - url: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
+        type: Documentation
+    description: >-
+      Azure Arc REST API enables management of servers, Kubernetes clusters, and data services running outside Azure. It
+      supports onboarding hybrid resources, applying Azure policies, enabling monitoring, and extending Azure management
       capabilities to on-premises and multi-cloud environments.
 common:
   - type: GitHubOrganization

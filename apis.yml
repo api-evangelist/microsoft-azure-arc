@@ -33,6 +33,10 @@ apis:
       supports onboarding hybrid resources, applying Azure policies, enabling monitoring, and extending Azure management
       capabilities to on-premises and multi-cloud environments.
 common:
+  - type: DomainSecurity
+    url: security/microsoft-azure-arc-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-azure-arc-authentication.yml
   - type: OAuthScopes
     url: scopes/microsoft-azure-arc-scopes.yml
   - type: GitHubOrganization

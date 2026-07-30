@@ -1,7 +1,20 @@
 aid: microsoft-azure-arc
 name: Azure Arc
 description: Operation groups for the Hybrid Compute REST API.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-azure-arc.png
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-arc/refs/heads/main/apis.yml
 created: '2026-03-13'
 modified: '2026-05-19'
@@ -12,26 +25,30 @@ tags:
   - Multi-Cloud
   - Server Management
 apis:
-  - aid: microsoft-azure-arc:rest-api
-    name: Azure Arc REST API
-    tags:
-      - Arc
-      - Hybrid Cloud
-      - Kubernetes
-      - Multi-Cloud
-      - Server Management
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://management.azure.com/
-    humanURL: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
-    properties:
-      - url: openapi/microsoft-azure-arc-openapi.yml
-        type: OpenAPI
-      - url: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
-        type: Documentation
-    description: >-
-      Azure Arc REST API enables management of servers, Kubernetes clusters, and data services running outside Azure. It
-      supports onboarding hybrid resources, applying Azure policies, enabling monitoring, and extending Azure management
-      capabilities to on-premises and multi-cloud environments.
+- aid: microsoft-azure-arc:microsoft-azure-arc-machines-api
+  name: Azure Arc Machines API
+  description: Machines operations
+  humanURL: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
+  baseURL: https://management.azure.com/
+  tags:
+  - Machines
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-azure-arc-machines-api-openapi.yml
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
+- aid: microsoft-azure-arc:microsoft-azure-arc-operations-api
+  name: Azure Arc Operations API
+  description: Operations operations
+  humanURL: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
+  baseURL: https://management.azure.com/
+  tags:
+  - Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-azure-arc-operations-api-openapi.yml
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
 common:
   - type: AgenticAccess
     url: agentic-access/microsoft-azure-arc-agentic-access.yml

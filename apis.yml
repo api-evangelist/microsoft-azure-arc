@@ -1,6 +1,7 @@
 aid: microsoft-azure-arc
 name: Azure Arc
 description: Operation groups for the Hybrid Compute REST API.
+specificationVersion: '0.23'
 accessModel:
   pricing: freemium
   onboarding: self-serve

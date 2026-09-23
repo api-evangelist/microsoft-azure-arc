@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Azure Arc Hybrid Compute REST Machines Operations API
+  title: Azure Arc Hybrid Compute REST Operations API
   description: Azure Arc extends Azure management to servers, Kubernetes clusters, and data services running anywhere. The Hybrid Compute REST API manages Arc-enabled servers (machines), extensions, and private link scopes.
   version: '2024-01-01'
 servers:
@@ -37,27 +37,6 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
-    OperationList:
-      type: object
-      properties:
-        value:
-          type: array
-          items:
-            $ref: '#/components/schemas/Operation'
-        nextLink:
-          type: string
-    ErrorResponse:
-      type: object
-      properties:
-        error:
-          type: object
-          properties:
-            code:
-              type: string
-            message:
-              type: string
-            target:
-              type: string
     Operation:
       type: object
       properties:
@@ -76,6 +55,27 @@ components:
               type: string
         isDataAction:
           type: boolean
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code:
+              type: string
+            message:
+              type: string
+            target:
+              type: string
+    OperationList:
+      type: object
+      properties:
+        value:
+          type: array
+          items:
+            $ref: '#/components/schemas/Operation'
+        nextLink:
+          type: string
   parameters:
     apiVersion:
       name: api-version

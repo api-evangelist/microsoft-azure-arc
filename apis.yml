@@ -64,6 +64,9 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/rest/api/hybridcompute/
 common:
+  - type: CapabilityMap
+    url: capabilities/microsoft-azure-arc-capability-edges.yml
+    name: Azure Arc Business Capability Map
   - type: Website
     url: https://www.microsoft.com/
   - type: AgenticAccess
